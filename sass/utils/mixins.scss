@@ -1,0 +1,64 @@
+@mixin card-box {
+  display: flex;
+
+  justify-content: space-between;
+
+  width: 90%;
+  height: 75px;
+  background-color: $white;
+  border-radius: 20px;
+  padding: 10px;
+  margin: 0.5rem auto;
+
+  box-shadow: $card-shadow;
+}
+@mixin meal-name {
+  font-weight: 800;
+  margin: 30px 15px 15px;
+  border-bottom: 2px solid $color-tertiary;
+  width: 20%;
+}
+@mixin description {
+  margin: 0 5px;
+  font-weight: bolder;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+@mixin price {
+  align-self: flex-end;
+  margin: 5px;
+  font-weight: bolder;
+  font-size: 1rem;
+}
+
+@mixin heading {
+  font-weight: 900;
+  font-size: 1.2rem;
+}
+@mixin byline {
+  font-size: 1rem;
+  font-family: "roboto", sans-serif;
+}
+@mixin price {
+  align-self: flex-end;
+  margin: 5px;
+  font-weight: bolder;
+  font-size: 1rem;
+}
+@mixin button {
+  width: 12rem;
+  height: 3rem;
+
+  align-self: center;
+  margin: 2rem;
+  border-radius: 30px;
+  font-size: 1.1rem;
+  color: white;
+  border: none;
+  background-image: linear-gradient(
+    to bottom right,
+    $colour-secondary,
+    $colour-primary
+  );
+}

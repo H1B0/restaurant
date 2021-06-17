@@ -1,0 +1,29 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  .heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: auto;
+    padding: 0 20px;
+
+    background-color: green;
+    &__logo {
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+      height: 50px;
+      font-size: 1rem;
+    }
+    &__arrow {
+      font-size: 1.5rem;
+    }
+  }
+  &__img {
+    width: 100vw;
+    margin: 0;
+  }
+}

@@ -1,0 +1,57 @@
+.main-container {
+  display: flex;
+  flex-direction: column;
+
+  width: 100vw;
+  height: auto;
+  padding: 15px 0;
+
+  border-radius: 50px 50px 0 0;
+  background-color: $grey;
+  position: absolute;
+  top: 82%;
+}
+.title {
+  width: 90%;
+  height: 100px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 2rem;
+
+  &__name {
+    font-style: italic;
+    font-weight: 800;
+
+    font-family: "Shrikhand";
+  }
+  &__heart {
+    font-weight: lighter;
+    font-family: "roboto", sans-serif;
+  }
+}
+
+.meal-name {
+  @include meal-name;
+}
+
+.card {
+  @include card-box;
+}
+.description {
+  @include description;
+  &__heading {
+    @include heading;
+  }
+  &__byline {
+    @include byline;
+  }
+}
+.price {
+  @include price;
+}
