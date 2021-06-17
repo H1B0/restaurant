@@ -1,3 +1,8 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -12,7 +17,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Shrikhand";
+  font-family: "Shrikhand", cursive;
 }
 
 span {
@@ -24,8 +29,39 @@ a {
   color: inherit;
 }
 
-textarea {
+/*textarea {
   font-family: "Roboto", sans-serif;
+}*/
+.btn {
+  width: 12rem;
+  height: 3rem;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin: 2rem;
+  border-radius: 30px;
+  font-size: 1.1rem;
+  color: white;
+  border: none;
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#ff79da), to(#9356dc));
+  background-image: linear-gradient(to bottom right, #ff79da, #9356dc);
+}
+
+.card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 90%;
+  height: 75px;
+  background-color: white;
+  border-radius: 20px;
+  padding: 10px;
+  margin: 0.5rem auto;
+  -webkit-box-shadow: 0 0.1px 0px 0 rgba(0, 0, 0, 0.19), 0 0px 10px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 0.1px 0px 0 rgba(0, 0, 0, 0.19), 0 0px 10px 0 rgba(0, 0, 0, 0.19);
 }
 
 .header {
@@ -50,14 +86,17 @@ textarea {
       -ms-flex-align: center;
           align-items: center;
   width: 100vw;
-  height: auto;
-  background-color: green;
+  height: 80px;
+  padding: 0 20px;
+  background-color: white;
 }
 
 .header .heading__logo {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
+  height: 50px;
+  font-size: 1rem;
 }
 
 .header .heading__arrow {
@@ -67,6 +106,64 @@ textarea {
 .header__img {
   width: 100vw;
   margin: 0;
+}
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: absolute;
+  top: 100%;
+  width: 100vw;
+  height: auto;
+  padding: 15px 25px;
+  font-size: 1rem;
+  background-color: #2e2d2d;
+  color: white;
+}
+
+.footer__img {
+  font-size: 10px;
+  width: 30%;
+  padding: 30px 10px;
+  color: white;
+}
+
+.line1 {
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: baseline;
+      -ms-flex-pack: baseline;
+          justify-content: baseline;
+}
+
+.line1__i {
+  padding: 0 20px 20px 0px;
+}
+
+.line2 {
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: baseline;
+      -ms-flex-pack: baseline;
+          justify-content: baseline;
+}
+
+.line2__i {
+  font-size: 0.8rem;
+  padding: 0 17px 20px 0px;
+}
+
+.line {
+  line-height: 1.8;
 }
 
 .main-container {
@@ -82,8 +179,8 @@ textarea {
   padding: 15px 0;
   border-radius: 50px 50px 0 0;
   background-color: #f2f2f2;
-  position: absolute;
-  top: 82%;
+  position: relative;
+  bottom: 3%;
 }
 
 .title {
@@ -111,6 +208,7 @@ textarea {
 .title__name {
   font-style: italic;
   font-weight: 800;
+  font-size: 1.85rem;
   font-family: "Shrikhand";
 }
 
@@ -119,41 +217,35 @@ textarea {
   font-family: "roboto", sans-serif;
 }
 
-.entrees {
+.meal-name {
   font-weight: 800;
-  margin: 10px 15px;
+  margin: 30px 15px 15px;
+  border-bottom: 2px solid #99e2d0;
+  width: 20%;
 }
 
-.card {
+.description {
+  margin: 0 5px;
+  font-weight: bolder;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  width: 90%;
-  height: 75px;
-  background-color: white;
-  border-radius: 15px;
-  padding: 10px;
-  margin: 0.5rem auto;
-  -webkit-box-shadow: 0 0.1px 0px 0 rgba(0, 0, 0, 0.19), 0 0px 0.2px 0 rgba(0, 0, 0, 0.19);
-          box-shadow: 0 0.1px 0px 0 rgba(0, 0, 0, 0.19), 0 0px 0.2px 0 rgba(0, 0, 0, 0.19);
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
-.desription {
-  font-size: 50px;
-  margin: 0 5px;
-  font-weight: bolder;
-}
-
-.desription__heading {
+.description__heading {
   font-weight: 900;
-  background-color: yellow;
+  font-size: 1.2rem;
 }
 
-.desription__byline {
-  color: green;
+.description__byline {
+  font-size: 1rem;
+  font-family: "roboto", sans-serif;
 }
 
 .price {
@@ -162,5 +254,45 @@ textarea {
   margin: 5px;
   font-weight: bolder;
   font-size: 1rem;
+}
+
+.location {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100vw;
+  height: auto;
+  background-color: lightgrey;
+  padding: 20px 0;
+}
+
+.book {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 30px;
+  background-color: #f2f2f2;
+}
+
+.book__heading {
+  font-family: "roboto", sans-serif;
+  font-size: 2rem;
+  font-weight: 900;
 }
 /*# sourceMappingURL=main.css.map */
