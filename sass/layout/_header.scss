@@ -7,10 +7,10 @@
     justify-content: center;
     align-items: center;
     width: 100vw;
-    height: auto;
+    height: 80px;
     padding: 0 20px;
 
-    background-color: green;
+    background-color: $white;
     &__logo {
       text-align: center;
       margin-left: auto;

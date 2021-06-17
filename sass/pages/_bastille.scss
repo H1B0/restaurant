@@ -8,8 +8,8 @@
 
   border-radius: 50px 50px 0 0;
   background-color: $grey;
-  position: absolute;
-  top: 82%;
+  position: relative;
+  bottom: 3%;
 }
 .title {
   width: 90%;
@@ -27,6 +27,7 @@
   &__name {
     font-style: italic;
     font-weight: 800;
+    font-size: 1.85rem;
 
     font-family: "Shrikhand";
   }
@@ -40,9 +41,6 @@
   @include meal-name;
 }
 
-.card {
-  @include card-box;
-}
 .description {
   @include description;
   &__heading {
