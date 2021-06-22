@@ -7,7 +7,9 @@
   background-color: lightgrey;
   padding: 20px 0;
 }
-.book {
+.booking {
+  /*width: 100vw; the display goes beyond the screen*/
+  height: 300px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -15,10 +17,67 @@
   padding: 30px;
   background-color: $grey;
   &__heading {
-    font-family: "roboto", sans-serif;
+    font-family: "shrikhand", sans-serif;
     font-size: 2rem;
     font-weight: 900;
+    height: 100px;
   }
   &__byline {
+    display: flex;
+    width: 65%;
+    justify-content: center;
+    align-items: center;
   }
+}
+.help {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+.global-card {
+  padding: 10px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  &__number {
+    font-size: 0.8rem;
+    color: white;
+    background-color: $colour-primary;
+    padding: 5px 10px;
+    border-radius: 30px;
+  }
+}
+
+.card-menu {
+  @include card-menu;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  &__icon {
+    font-size: 1.5rem;
+    color: grey;
+    padding: 10px 30px;
+    &--color {
+      color: $colour-primary;
+    }
+    &--padleft {
+      padding-left: 0;
+    }
+    &--padright {
+      font-size: 1.4rem;
+      padding-right: 0;
+    }
+  }
+  &__text {
+    font-size: 1rem;
+    font-weight: 900;
+  }
+}
+.menu-titles {
+  @include menu-titles;
+}
+.restaurants {
+  height: 800px;
+  background-color: $grey;
+  display: flex;
 }
