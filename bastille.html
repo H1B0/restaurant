@@ -7,130 +7,134 @@
 
     <link rel="stylesheet" href="css/style.css">
 
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&family=Shrikhand&display=swap" rel="stylesheet">
 
-   <link rel="preconnect" href="https://fonts.gstatic.com">
-   <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
+   
     <title>Document</title>
     <script src="https://kit.fontawesome.com/f1335ea4f7.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    <!--HEADER-->
     <header class="header">
         <a class="heading" href="">
             <i class="fas fa-arrow-left heading__arrow"></i>
             <img class="heading__logo" src="images/logo/ohmyfood@2x.svg" alt="">
         </a>
-        <img  class="header__img" src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg">
+        
 
     </header>
 
-<container class="main-container">
+<section class="main-section">  
+    <img  class="header__img" src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg">
+    <container class="main-container">
+       
+        <div class="title">
+            <h3 class="title__name">Bastille</h3>
+            <i class="far fa-heart title__heart"></i>
+        </div>
+        <!--ENTREES-->
+        
+        <h3 class="meal-name">ENTREES</h3>
+        
+        <a href="#" class="card">
+            <div class="description">
+                <p class="description__heading">Citrus Squid Carpaccio</p>
+                <p class="description__byline">with orange zest</p>
+            </div>
+            <div class="price">
+                25€
+            </div>
+        </a>
     
-    <div class="title">
-        <h3 class="title__name">Bastille</h3>
-        <i class="far fa-heart title__heart"></i>
-    </div>
+        <a href="#" class="card">
+            <div class="description">
+                <p class="description__heading">Grandmother's Vegetable Soup</p>
+                <p class="description__byline">Carrots, parsnips, Jerusalem artichoke</p>
+            </div>
+            <div class="price">
+                35€
+            </div>
+        </a>
     
+        <a href="#" class="card">
+            <div class="description">
+                <p class="description__heading">Onion Soup</p>
+                <p class="description__byline">Revisted</p>
+            </div>
+            <div class="price">
+                20€
+            </div>
+        </a>
+        <!--MAINDISH-->
+        <span class="meal-name">MAIN DISH</span>
+        
+        <a href="#" class="card">
+            <div class="description">
+                <p class="description__heading">Scallops</p>
+                <p class="description__byline">with mashed parsnip</p>
+            </div>
+            <div class="price">
+                40€
+            </div>
+        </a>
     
-    <span class="meal-name">ENTREES</span>
+        <a href="#" class="card">
+            <div class="description">
+                <p class="description__heading">Magret de canard</p>
+                <p class="description__byline">with mashed potatoes</p>
+            </div>
+            <div class="price">
+                35€
+            </div>
+        </a>
     
-    <div class="card">
-        <div class="description">
-            <p class="description__heading">Citrus Squid Carpaccio</p>
-            <p class="description__byline">with orange zest</p>
-        </div>
-        <div class="price">
-            25€
-        </div>
-    </div>
-
-    <div class="card">
-        <div class="description">
-            <p class="description__heading">Grandmother's Vegetable Soup</p>
-            <p class="description__byline">Carrots, parsnips, Jerusalem artichoke</p>
-        </div>
-        <div class="price">
-            35€
-        </div>
-    </div>
-
-    <div class="card">
-        <div class="description">
-            <p class="description__heading">Onion Soup</p>
-            <p class="description__byline">Revisted</p>
-        </div>
-        <div class="price">
-            20€
-        </div>
-    </div>
-    <!--MAINDISH-->
-    <span class="meal-name">MAIN DISH</span>
+        <a href="#" class="card">
+            <div class="description">
+                <p class="description__heading">Game Hen</p>
+                <p class="description__byline">with vegetable gnocchis</p>
+            </div>
+            <div class="price">
+                44€
+            </div>
+        </a>
+        <!--DESSERTS-->
+        <span class="meal-name">DESSERTS</span>
+        
+        <a href="#" class="card">
+            <div class="description">
+                <p class="description__heading">Floral Ice Cream</p>
+                <p class="description__byline">with hazelnut butter</p>
+            </div>
+            <div class="price">
+                18€
+            </div>
+        </a>
     
-    <div class="card">
-        <div class="description">
-            <p class="description__heading">Scallops</p>
-            <p class="description__byline">with mashed parsnip</p>
-        </div>
-        <div class="price">
-            40€
-        </div>
-    </div>
-
-    <div class="card">
-        <div class="description">
-            <p class="description__heading">Magret de canard</p>
-            <p class="description__byline">with mashed potatoes</p>
-        </div>
-        <div class="price">
-            35€
-        </div>
-    </div>
-
-    <div class="card">
-        <div class="description">
-            <p class="description__heading">Game Hen</p>
-            <p class="description__byline">with vegetable gnocchis</p>
-        </div>
-        <div class="price">
-            44€
-        </div>
-    </div>
-    <!--DESSERTS-->
-    <span class="meal-name">DESSERTS</span>
+        <a href="#" class="card">
+            <div class="description">
+                <p class="description__heading">Chocolate Lava Cake</p>
+                <p class="description__byline">Revisited</p>
+            </div>
+            <div class="price">
+                22€
+            </div>
+        </a>
     
-    <div class="card">
-        <div class="description">
-            <p class="description__heading">Floral Ice Cream</p>
-            <p class="description__byline">with hazelnut butter</p>
-        </div>
-        <div class="price">
-            18€
-        </div>
-    </div>
-
-    <div class="card">
-        <div class="description">
-            <p class="description__heading">Chocolate Lava Cake</p>
-            <p class="description__byline">Revisited</p>
-        </div>
-        <div class="price">
-            22€
-        </div>
-    </div>
-
-    <div class="card">
-        <div class="description">
-            <p class="description__heading">Napolean</p>
-            <p class="description__byline">with blueberries and marzipan</p>
-        </div>
-        <div class="price">
-            23€
-        </div>
-    </div>
-    <button type="submit" class="btn">Order</button>
-    
-</container>
+        <a href="#" class="card">
+            <div class="description">
+                <p class="description__heading">Napolean</p>
+                <p class="description__byline">with blueberries and marzipan</p>
+            </div>
+            <div class="price">
+                23€
+            </div>
+        </a>
+        <button type="submit" class="btn">Order</button>
+        
+    </container>
+</section>
 <footer class="footer">
     <img class="footer__img" src="images/logo/ohmyfood@2x.svg" alt="">
     <a class="line1" href="#"> 
@@ -144,17 +148,11 @@
     <a class="line" href="#">
         <p >Legal</p>
     </a>
-    <a class="line" href="#">
+    <a class="line line--last" href="mailto:webmaster@example.com">
         <p >Contact</p>
     </a>
         
     
 </footer>
-
-    
-
-    
-
-    
 </body>
 </html>

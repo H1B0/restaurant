@@ -5,15 +5,14 @@
   top: 100%;
   width: 100vw;
   height: auto;
-  padding: 15px 25px;
-  font-size: 1rem;
 
+  font-size: 1rem;
   background-color: rgb(46, 45, 45);
   color: $white;
   &__img {
     font-size: 10px;
     width: 30%;
-    padding: 30px 10px;
+    padding: 30px 25px;
     color: $white;
   }
 }
@@ -21,6 +20,7 @@
   width: 90%;
   display: flex;
   justify-content: baseline;
+  padding: 0 25px;
   &__i {
     padding: 0 20px 20px 0px;
   }
@@ -29,6 +29,7 @@
   width: 90%;
   display: flex;
   justify-content: baseline;
+  padding: 0 25px;
   &__i {
     font-size: 0.8rem;
     padding: 0 17px 20px 0px;
@@ -36,4 +37,8 @@
 }
 .line {
   line-height: 1.8;
+  padding: 0 25px;
+  &--last {
+    margin-bottom: 50px;
+  }
 }
