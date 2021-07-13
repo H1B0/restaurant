@@ -1,5 +1,8 @@
 .btn {
-  @include button;
+  @include main-button;
+}
+.menu-btn {
+  @include menu-button;
 }
 .card {
   @include card-box;

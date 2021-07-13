@@ -62,15 +62,20 @@
   font-weight: bolder;
   font-size: 1rem;
 }
-@mixin button {
+
+@mixin menu-titles {
+  margin: 35px 15px 25px;
+  font-size: 1.5rem;
+}
+@mixin main-button {
   cursor: pointer;
   width: 100%;
-  max-width: 150px;
+  max-width: 210px;
   height: auto;
-  padding: 4% 10%;
+  padding: 20px 10px;
   align-self: center;
   margin: 2rem auto;
-  border-radius: 30px;
+  border-radius: 50px;
   font-size: 1.5rem;
   color: white;
   border: none;
@@ -81,6 +86,22 @@
     $colour-primary
   );
 }
-@mixin menu-titles {
-  margin: 35px 15px 25px;
+@mixin menu-button {
+  cursor: pointer;
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  padding: 25px 10px;
+  align-self: center;
+  margin: 2rem;
+  border-radius: 50px;
+  font-size: 1.5rem;
+  color: white;
+  border: none;
+
+  background-image: linear-gradient(
+    to bottom right,
+    $colour-secondary,
+    $colour-primary
+  );
 }
